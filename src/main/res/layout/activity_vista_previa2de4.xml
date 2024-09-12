@@ -183,7 +183,7 @@
         app:srcCompat="@drawable/flechachida" />
 
     <Button
-        android:id="@+id/leccion1"
+        android:id="@+id/iniciar"
         android:layout_width="137dp"
         android:layout_height="65dp"
         android:backgroundTint="#00FF9800"

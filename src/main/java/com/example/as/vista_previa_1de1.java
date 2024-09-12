@@ -25,7 +25,7 @@ public class vista_previa_1de1 extends AppCompatActivity {
         iniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(vista_previa_1de1.this, practica.class);
+                Intent intent = new Intent(vista_previa_1de1.this, practica_1de1.class);
 
                 intent.putExtra("actividad_anterior", getLocalClassName());
                 startActivity(intent);
