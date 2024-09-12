@@ -22,6 +22,7 @@
         app:srcCompat="@drawable/comentario" />
 
     <ImageView
+        android:id="@+id/imageView30"
         android:layout_width="227dp"
         android:layout_height="325dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,6 +34,7 @@
         app:srcCompat="@drawable/comentario" />
 
     <ImageView
+        android:id="@+id/imageView19"
         android:layout_width="175dp"
         android:layout_height="159dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -172,11 +174,11 @@
         android:layout_width="143dp"
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
         app:layout_constraintHorizontal_bias="0.097"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631" />
+        app:layout_constraintVertical_bias="0.657" />
 
     <TextView
         android:id="@+id/porcentaje"
@@ -188,9 +190,9 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:layout_constraintVertical_bias="0.077" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

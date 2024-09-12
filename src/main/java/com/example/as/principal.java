@@ -28,7 +28,7 @@ public class principal extends AppCompatActivity {
         practicar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(principal.this, seleccion2.class);
+                Intent intent = new Intent(principal.this, seleccion.class);
                 startActivity(intent);
             }
         });
