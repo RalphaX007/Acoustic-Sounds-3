@@ -13,6 +13,11 @@
         android:theme="@style/Theme.AS"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ingnore="DiscouragedApi"/>
+        <activity
             android:name=".leccion2de3"
             android:exported="false" />
         <activity
@@ -68,7 +73,9 @@
             android:exported="false" />
         <activity
             android:name=".practica_1de1"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".leccion"
             android:exported="false" />
@@ -149,8 +156,10 @@
             android:name=".crear_cuenta"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".splash"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

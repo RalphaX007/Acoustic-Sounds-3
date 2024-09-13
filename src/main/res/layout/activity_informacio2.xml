@@ -52,7 +52,7 @@
         android:id="@+id/textView4"
         android:layout_width="313dp"
         android:layout_height="235dp"
-        android:text="Tdfhgufhv uhur uiehugihdiuuihfduighfduigiufhdgiuhfdui iudh gidhgih dfiughuifd hgui dfhguhduighuidfhguidfh giu hdfuighdf iughdiug hufeh giudfhguidhguihf ugs s sosnms sui d hbsuf sb  k u s soa a  s   ig gdi ih gioii rhuivhreivhuievhireviuhrehviuhuie huif hwuih wriufheruv uisvjsl s v sbhoka ha"
+        android:text="La funcionalidad de la aplicación es bastante sencilla: \n\nHay varios niveles de experiencia en los que podrás estar. Iniciarás de principiante, luego de eso irás a novato, luego a intermedio y por último a avanzado. Cada uno de estos niveles contiene lecciones y prácticas distintas que deberás completar para pasar al siguiente. \n\nTAN DIVERTIDO COMO UN VIDEOJUEGO! "
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

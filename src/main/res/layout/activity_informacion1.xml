@@ -51,7 +51,7 @@
         android:id="@+id/textView4"
         android:layout_width="313dp"
         android:layout_height="235dp"
-        android:text="Tdfhgufhv uhur uiehugihdiuuihfduighfduigiufhdgiuhfdui iudh gidhgih dfiughuifd hgui dfhguhduighuidfhguidfh giu hdfuighdf iughdiug hufeh giudfhguidhguihf ugs s sosnms sui d hbsuf sb  k u s soa a  s   ig gdi ih gioii rhuivhreivhuievhireviuhrehviuhuie huif hwuih wriufheruv uisvjsl s v sbhoka ha"
+        android:text="HOLA! Bienvenid@\n\nNosotros somos Abstract, una empresa dedicada al desarrollo de software y aplicaciones móviles. Y hoy te presentamos Acoustic Sounds, una app hecha para todo aquel que desee aprender guitarra de manera gratuita y desde la comodidad de tu casa"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
