@@ -16,31 +16,47 @@
             android:name=".MainActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            tools:ingnore="DiscouragedApi"/>
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".leccion2de3"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".leccion2de2"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi" />
         <activity
             android:name=".practica_1de2"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi" />
         <activity
             android:name=".leccion2de1"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi" />
         <activity
             android:name=".leccion1de1"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".leccion1de3"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi" />
         <activity
             android:name=".leccion1dedos"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi" />
         <activity
             android:name=".resultados"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi" />
         <activity
             android:name=".practica_3de4"
             android:exported="false" />
@@ -103,58 +119,94 @@
             android:exported="false" />
         <activity
             android:name=".selccion4"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi" />
         <activity
             android:name=".vista_previa_3de3"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi" />
         <activity
             android:name=".vista_previa_2de3"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".vista_previa_1de3"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".vista_previa_3de2"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".vista_previa_2de2"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".vista_previa_1de2"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".vista_previa_2de1"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".vista_previa_3de1"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".vista_previa_1de1"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".seleccion3"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi" />
         <activity
             android:name=".seleccion2"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".seleccion"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".principal"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".informacion_3"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".informacio_2"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".informacion_1"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".crear_cuenta"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".splash"
             android:exported="true"
