@@ -28,6 +28,7 @@ public class practica_1de1 extends AppCompatActivity {
         text = findViewById(R.id.textView9000);
         hola = new Cuerdas();
         tabs = new boolean[6][12];
+        
 
         new Handler().postDelayed(() -> {
             for (int i = 0; i < 6; i++) {
