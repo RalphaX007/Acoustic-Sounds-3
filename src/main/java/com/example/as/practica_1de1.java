@@ -1,18 +1,22 @@
 package com.example.as;
 
+import android.content.pm.PackageManager;
+import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class practica_1de1 extends AppCompatActivity {
-    private String actividadAnterior;
-    private TextView text;
+    private String actividadAnterior; private MediaRecorder grabacion;
+    private TextView text; private String archivoSalida = null;
     private Cuerdas hola;
     private double[][] cuerdas;
     private boolean[][] tabs;
@@ -28,7 +32,7 @@ public class practica_1de1 extends AppCompatActivity {
         text = findViewById(R.id.textView9000);
         hola = new Cuerdas();
         tabs = new boolean[6][12];
-        
+
 
         new Handler().postDelayed(() -> {
             for (int i = 0; i < 6; i++) {
@@ -40,6 +44,10 @@ public class practica_1de1 extends AppCompatActivity {
                 }
             }
         }, segprac);
+
+
+ 
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
