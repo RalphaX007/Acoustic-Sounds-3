@@ -33,7 +33,7 @@ public class video_leccion extends AppCompatActivity {
         //Links de los vídeos:
         video1 = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/gKazDze4RVk?si=MJWk2b8ekMCOrg8C\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
         video2 = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/HKsjLFAIWkc?si=rztRqMBJB-zwXWaZ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
-        video3 = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/a9m-VPByt30?si=3S1NnjoYb5X3zRnB\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n";
+        video4 = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/a9m-VPByt30?si=3S1NnjoYb5X3zRnB\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n";
 
         //Ingresar los links en los WebViewers:
         leccion1.loadData(video1, "text/html", "utf-8");

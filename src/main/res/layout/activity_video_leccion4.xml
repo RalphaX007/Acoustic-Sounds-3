@@ -1,181 +1,343 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondorayado"
-    tools:context=".video_leccion4">
+    tools:context=".video_leccion">
 
 
-    <ImageView
-        android:layout_width="321dp"
-        android:layout_height="487dp"
-        android:layout_marginBottom="424dp"
-        android:rotation="90"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/cuaderno1" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:layout_width="321dp"
-        android:layout_height="487dp"
-        android:rotation="90"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535"
-        app:srcCompat="@drawable/cuaderno1" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
 
-    <ImageView
-        android:layout_width="321dp"
-        android:layout_height="487dp"
-        android:layout_marginTop="448dp"
-        android:rotation="90"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cuaderno1" />
+            <ImageView
+                android:id="@+id/ancladelscroll"
+                android:layout_width="92dp"
+                android:layout_height="158dp"
+                android:rotation="90"
+                app:srcCompat="@drawable/cuaderno1"
+                tools:ignore="MissingConstraints"
+                tools:layout_conversion_absoluteHeight="688dp"
+                tools:layout_conversion_absoluteWidth="504dp"
+                tools:layout_editor_absoluteX="3119dp"
+                tools:layout_editor_absoluteY="190dp" />
 
-    <ImageView
-        android:layout_width="204dp"
-        android:layout_height="124dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13"
-        app:srcCompat="@drawable/comentario" />
+            <ImageView
+                android:id="@+id/imageView38"
+                android:layout_width="441dp"
+                android:layout_height="549dp"
+                android:rotation="90"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView300"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cuaderno1"
+                tools:layout_conversion_absoluteHeight="688dp"
+                tools:layout_conversion_absoluteWidth="504dp" />
 
-    <ImageView
-        android:layout_width="204dp"
-        android:layout_height="124dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.463"
-        app:srcCompat="@drawable/comentario" />
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="210dp"
+                android:layout_height="72dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+                app:layout_constraintEnd_toEndOf="@+id/imageView38"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView38"
+                app:layout_constraintTop_toTopOf="@+id/imageView38"
+                app:layout_constraintVertical_bias="0.331"
+                app:srcCompat="@drawable/comentario"
+                tools:layout_conversion_absoluteHeight="112dp"
+                tools:layout_conversion_absoluteWidth="147dp" />
 
-    <ImageView
-        android:layout_width="204dp"
-        android:layout_height="124dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799"
-        app:srcCompat="@drawable/comentario" />
+            <TextView
+                android:layout_width="66dp"
+                android:layout_height="17dp"
+                android:text="LECCION 1"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView37"
+                app:layout_constraintEnd_toEndOf="@+id/imageView37"
+                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintStart_toStartOf="@+id/imageView37"
+                app:layout_constraintTop_toTopOf="@+id/imageView37"
+                app:layout_constraintVertical_bias="0.29"
+                tools:layout_conversion_absoluteHeight="18dp"
+                tools:layout_conversion_absoluteWidth="62dp" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TUTORIALES"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+            <Button
+                android:id="@+id/practica1"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:backgroundTint="@color/black"
+                android:text="PRACTICA"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+                app:layout_constraintEnd_toEndOf="@+id/imageView38"
+                app:layout_constraintHorizontal_bias="0.892"
+                app:layout_constraintStart_toStartOf="@+id/imageView38"
+                app:layout_constraintTop_toTopOf="@+id/imageView38"
+                app:layout_constraintVertical_bias="0.739"
+                tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
+                tools:layout_conversion_absoluteHeight="42dp"
+                tools:layout_conversion_absoluteWidth="144dp" />
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LECCION 3"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.196"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.738" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LECCION 2"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LECCION 1"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.218"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155" />
-
-    <Button
-        android:id="@+id/practica1"
-        android:layout_width="144dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/black"
-        android:text="PRACTICA"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.767"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.304"
-        tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
-
-    <Button
-        android:id="@+id/practica2"
-        android:layout_width="144dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/black"
-        android:text="PRACTICA"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.767"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584"
-        tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
-
-    <Button
-        android:id="@+id/practica3"
-        android:layout_width="144dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/black"
-        android:text="PRACTICA"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.767"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.895"
-        tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+            <WebView
+                android:id="@+id/leccion1"
+                android:layout_width="382dp"
+                android:layout_height="173dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+                app:layout_constraintEnd_toEndOf="@+id/imageView38"
+                app:layout_constraintHorizontal_bias="0.271"
+                app:layout_constraintStart_toStartOf="@+id/imageView38"
+                app:layout_constraintTop_toTopOf="@+id/imageView38"
+                app:layout_constraintVertical_bias="0.529"
+                tools:layout_conversion_absoluteHeight="202dp"
+                tools:layout_conversion_absoluteWidth="530dp" />
 
 
+            <ImageView
+                android:id="@+id/imageView300"
+                android:layout_width="441dp"
+                android:layout_height="549dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="5756dp"
+                android:rotation="90"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView38"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.415"
+                app:srcCompat="@drawable/cuaderno1"
+                tools:layout_conversion_absoluteHeight="688dp"
+                tools:layout_conversion_absoluteWidth="504dp" />
+
+            <ImageView
+                android:id="@+id/imageView370"
+                android:layout_width="210dp"
+                android:layout_height="72dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView300"
+                app:layout_constraintEnd_toEndOf="@+id/imageView300"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView300"
+                app:layout_constraintTop_toTopOf="@+id/imageView300"
+                app:layout_constraintVertical_bias="0.331"
+                app:srcCompat="@drawable/comentario"
+                tools:layout_conversion_absoluteHeight="112dp"
+                tools:layout_conversion_absoluteWidth="147dp" />
+
+            <TextView
+                android:layout_width="66dp"
+                android:layout_height="17dp"
+                android:text="LECCION 2"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView370"
+                app:layout_constraintEnd_toEndOf="@+id/imageView370"
+                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintStart_toStartOf="@+id/imageView370"
+                app:layout_constraintTop_toTopOf="@+id/imageView370"
+                app:layout_constraintVertical_bias="0.29"
+                tools:layout_conversion_absoluteHeight="18dp"
+                tools:layout_conversion_absoluteWidth="62dp" />
+
+            <Button
+                android:id="@+id/practica12"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:backgroundTint="@color/black"
+                android:text="PRACTICA"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView300"
+                app:layout_constraintEnd_toEndOf="@+id/imageView300"
+                app:layout_constraintHorizontal_bias="0.892"
+                app:layout_constraintStart_toStartOf="@+id/imageView300"
+                app:layout_constraintTop_toTopOf="@+id/imageView300"
+                app:layout_constraintVertical_bias="0.739"
+                tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
+                tools:layout_conversion_absoluteHeight="42dp"
+                tools:layout_conversion_absoluteWidth="144dp" />
+
+            <WebView
+                android:id="@+id/leccion2"
+                android:layout_width="382dp"
+                android:layout_height="173dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView300"
+                app:layout_constraintEnd_toEndOf="@+id/imageView300"
+                app:layout_constraintHorizontal_bias="0.271"
+                app:layout_constraintStart_toStartOf="@+id/imageView300"
+                app:layout_constraintTop_toTopOf="@+id/imageView300"
+                app:layout_constraintVertical_bias="0.529"
+                tools:layout_conversion_absoluteHeight="202dp"
+                tools:layout_conversion_absoluteWidth="530dp" />
+
+
+            <ImageView
+                android:id="@+id/imageView3110"
+                android:layout_width="441dp"
+                android:layout_height="549dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="5308dp"
+                android:rotation="90"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView300"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.413"
+                app:srcCompat="@drawable/cuaderno1"
+                tools:layout_conversion_absoluteHeight="688dp"
+                tools:layout_conversion_absoluteWidth="504dp" />
+
+            <ImageView
+                android:id="@+id/imageView3770"
+                android:layout_width="210dp"
+                android:layout_height="72dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3110"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3110"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView3110"
+                app:layout_constraintTop_toTopOf="@+id/imageView3110"
+                app:layout_constraintVertical_bias="0.331"
+                app:srcCompat="@drawable/comentario"
+                tools:layout_conversion_absoluteHeight="112dp"
+                tools:layout_conversion_absoluteWidth="147dp" />
+
+            <TextView
+                android:layout_width="66dp"
+                android:layout_height="17dp"
+                android:text="LECCION 3"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3770"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3770"
+                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintStart_toStartOf="@+id/imageView3770"
+                app:layout_constraintTop_toTopOf="@+id/imageView3770"
+                app:layout_constraintVertical_bias="0.29"
+                tools:layout_conversion_absoluteHeight="18dp"
+                tools:layout_conversion_absoluteWidth="62dp" />
+
+            <Button
+                android:id="@+id/practica1212"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:backgroundTint="@color/black"
+                android:text="PRACTICA"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3110"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3110"
+                app:layout_constraintHorizontal_bias="0.892"
+                app:layout_constraintStart_toStartOf="@+id/imageView3110"
+                app:layout_constraintTop_toTopOf="@+id/imageView3110"
+                app:layout_constraintVertical_bias="0.739"
+                tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
+                tools:layout_conversion_absoluteHeight="42dp"
+                tools:layout_conversion_absoluteWidth="144dp" />
+
+            <WebView
+                android:id="@+id/leccion3"
+                android:layout_width="382dp"
+                android:layout_height="173dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3110"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3110"
+                app:layout_constraintHorizontal_bias="0.271"
+                app:layout_constraintStart_toStartOf="@+id/imageView3110"
+                app:layout_constraintTop_toTopOf="@+id/imageView3110"
+                app:layout_constraintVertical_bias="0.529"
+                tools:layout_conversion_absoluteHeight="202dp"
+                tools:layout_conversion_absoluteWidth="530dp" />
+
+
+            <ImageView
+                android:id="@+id/imageView31100"
+                android:layout_width="441dp"
+                android:layout_height="549dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="4860dp"
+                android:rotation="90"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView3110"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.403"
+                app:srcCompat="@drawable/cuaderno1"
+                tools:layout_conversion_absoluteHeight="688dp"
+                tools:layout_conversion_absoluteWidth="504dp" />
+
+            <ImageView
+                android:id="@+id/imageView37700"
+                android:layout_width="210dp"
+                android:layout_height="72dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView31100"
+                app:layout_constraintEnd_toEndOf="@+id/imageView31100"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView31100"
+                app:layout_constraintTop_toTopOf="@+id/imageView31100"
+                app:layout_constraintVertical_bias="0.331"
+                app:srcCompat="@drawable/comentario"
+                tools:layout_conversion_absoluteHeight="112dp"
+                tools:layout_conversion_absoluteWidth="147dp" />
+
+            <TextView
+                android:layout_width="66dp"
+                android:layout_height="17dp"
+                android:text="LECCION 4"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView37700"
+                app:layout_constraintEnd_toEndOf="@+id/imageView37700"
+                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintStart_toStartOf="@+id/imageView37700"
+                app:layout_constraintTop_toTopOf="@+id/imageView37700"
+                app:layout_constraintVertical_bias="0.29"
+                tools:layout_conversion_absoluteHeight="18dp"
+                tools:layout_conversion_absoluteWidth="62dp" />
+
+            <Button
+                android:id="@+id/practica12120"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:backgroundTint="@color/black"
+                android:text="PRACTICA"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView31100"
+                app:layout_constraintEnd_toEndOf="@+id/imageView31100"
+                app:layout_constraintHorizontal_bias="0.892"
+                app:layout_constraintStart_toStartOf="@+id/imageView31100"
+                app:layout_constraintTop_toTopOf="@+id/imageView31100"
+                app:layout_constraintVertical_bias="0.739"
+                tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
+                tools:layout_conversion_absoluteHeight="42dp"
+                tools:layout_conversion_absoluteWidth="144dp" />
+
+            <WebView
+                android:id="@+id/leccion4"
+                android:layout_width="382dp"
+                android:layout_height="173dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView31100"
+                app:layout_constraintEnd_toEndOf="@+id/imageView31100"
+                app:layout_constraintHorizontal_bias="0.271"
+                app:layout_constraintStart_toStartOf="@+id/imageView31100"
+                app:layout_constraintTop_toTopOf="@+id/imageView31100"
+                app:layout_constraintVertical_bias="0.529"
+                tools:layout_conversion_absoluteHeight="202dp"
+                tools:layout_conversion_absoluteWidth="530dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
