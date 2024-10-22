@@ -15,9 +15,9 @@ public class practica_1de1 extends AppCompatActivity {
     private String actividadAnterior;
     private TextView text;
     private Cuerdasnumero hola;
-    private int segprac = 3000;
-    float [] tabs;  int finalI = 0;
-    float g = 0, g1 = 0;
+    private final int segprac = 1000;
+    double [] tabs;  int finalI = 0;
+    double g = 0, g1 = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,44 +29,50 @@ public class practica_1de1 extends AppCompatActivity {
         hola = new Cuerdasnumero();
 
 
-        tabs = new float[]{60, 60, 0, 60, 60, 63};
+        tabs = new double[]{62, 63, 63, 0, 60, 60, 63};
 
 
 
 
-            new Handler().postDelayed(() -> {
-                StringBuilder valores = new StringBuilder();
+    new Handler().postDelayed(() -> {
+        StringBuilder valores = new StringBuilder();
 
-                if (tabs[finalI] / 10 == 6 | tabs[finalI] / 100 == 6) {
-                    if (tabs[finalI] > 100) {
-                        g = tabs[finalI] / 100;
-                        g1 = (g - (int)g) * 100;
-                        valores.append((int)g1).append("\n");
-                        text.setText(valores.toString());
-                    } else if (tabs[finalI] >= 60 && tabs[finalI] <= 69) {
-                        g = tabs[finalI] / 10;
-                        g1 = (g - (int)g) * 10;
-                        valores.append((int)g1).append("\n");
-                        text.setText(valores.toString());
-                    }
+        if (tabs[finalI] / 10 >= 6.0 & tabs[finalI] / 10 <= 6.9) {
+            if (tabs[finalI] > 100) {
+                g = tabs[finalI] / 100;
+                g1 = (g - (int) g) * 100;
+                valores.append((int) g1).append("\n");
+                text.setText(valores.toString());
+            } else if (tabs[finalI] >= 60 & tabs[finalI] <= 69) {
+                g = tabs[finalI] / 10;
+                g1 = (g - (int) g) * 10;
+                valores.append((int) g1).append("\n");
+                text.setText(valores.toString());
+            }
 
 
-                } else if (tabs[finalI] / 10 == 5 | tabs[finalI] / 100 == 5){
-                    if (tabs[finalI] > 100) {
-                        g = tabs[finalI] / 100;
-                        g1 = (g - (int)g) * 100;
-                        valores.append((int)g1).append("\n");
-                        text.setText(valores.toString());
-                    } else if (tabs[finalI] >= 50 && tabs[finalI] <= 59) {
-                        g = tabs[finalI] / 10;
-                        g1 = (g - (int)g) * 10;
-                        valores.append((int)g1).append("\n");
-                        text.setText(valores.toString());
-                    }
-                }
-finalI++;
-                Log.d("Timer", "Ejecutando el temporizador");
-            }, segprac);
+        } else if (tabs[finalI] / 10 >= 5.0 && tabs[finalI] / 10 <= 5.9 | tabs[finalI] / 100 == 5) {
+            if (tabs[finalI] > 100) {
+                g = tabs[finalI] / 100;
+                g1 = (g - (int) g) * 100;
+                valores.append((int) g1).append("\n");
+                text.setText(valores.toString());
+            } else if (tabs[finalI] >= 50 & tabs[finalI] <= 59) {
+                g = tabs[finalI] / 10;
+                g1 = (g - (int) g) * 10;
+                valores.append((int) g1).append("\n");
+                text.setText(valores.toString());
+            }
+        }
+        if (tabs[finalI] == 0) {
+            text.setText("");
+        }
+
+
+        Log.d("Timer", "Ejecutando el temporizador");
+    }, segprac);
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

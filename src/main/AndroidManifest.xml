@@ -136,7 +136,7 @@
         <activity
             android:name=".video_leccion2"
             android:exported="false"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             tools:ignore="DiscouragedApi"/>
         <activity
             android:name=".video_leccion"
