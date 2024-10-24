@@ -29,6 +29,7 @@ public class video_leccion2 extends AppCompatActivity {
         leccion2 = findViewById(R.id.leccion2);
         leccion3 = findViewById(R.id.leccion3);
         leccion4 = findViewById(R.id.leccion4);
+
         //Links de los vídeos:
         video1 = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/pCaKxqTHvjc?si=sSs5u6Lb9Pjwdy-p\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
         video2 = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/GrbL8_78XSg?si=aDVNL6-GoOKDY7S5\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
